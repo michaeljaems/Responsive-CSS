@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #faebd7;
+  color: black;
+  overflow-x: hidden;
+}
+h3 {
+  text-align: center;
+}
+
+div .header {
+  background-color: black;
+  color: aliceblue;
+  margin-bottom: 20px;
+ border:solid #ffff;
+ border-radius: 20px;
+}
+p {
+  font-size: 15px;
+  font-weight: 550;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.box {
+  margin: 5px;
+  padding: 50px;
+}
+
+.box1 {
+  background-color: brown;
+}
+.box2 {
+  background-color: blueviolet;
+}
+.box3 {
+  background-color: coral;
+}
+.box4 {
+  background-color: violet;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #container {
+    display: flex;
+    flex-direction: row;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  .box {
+    width: 50vw;
+    height: 100%;
+  }
+}
